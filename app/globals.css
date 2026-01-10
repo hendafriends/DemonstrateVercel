@@ -28,18 +28,18 @@
   --color-zumthor: #edf5ff;
   --color-socialicon: #d1d8e0;
 
-  --text-metatitle: 12px, 20px;
-  --text-sectiontitle: 14px, 22px;
-  --text-regular: 16px, 26px;
-  --text-metatitle3: 18px, 26px;
-  --text-metatitle2: 20px, 32px;
-  --text-para2: 22px, 35px;
-  --text-itemtitle: 26px, 32px;
-  --text-itemtitle2: 24px, 32px;
-  --text-hero: 44px, 58px;
-  --text-sectiontitle3: 44px, 55px;
-  --text-sectiontitle2: 40px, 52px;
-  --text-sectiontitle4: 34px, 48px;
+  --text-metatitle: 12px / 20px;
+  --text-sectiontitle: 14px / 22px;
+  --text-regular: 16px / 26px;
+  --text-metatitle3: 18px / 26px;
+  --text-metatitle2: 20px / 32px;
+  --text-para2: 22px / 35px;
+  --text-itemtitle: 26px / 32px;
+  --text-itemtitle2: 24px / 32px;
+  --text-hero: 44px / 58px;
+  --text-sectiontitle3: 44px / 55px;
+  --text-sectiontitle2: 40px / 52px;
+  --text-sectiontitle4: 34px / 48px;
 
   --container-c-1390: 86.875rem;
   --container-c-1315: 82.188rem;

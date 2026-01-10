@@ -1,6 +1,6 @@
 import { Inter } from "next/font/google";
 import "../globals.css";
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import Proivder from "./Provider";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -11,6 +11,12 @@ export const metadata: Metadata = {
   icons: {
     icon: "/images/favicon.ico",
   },
+};
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
 };
 
 export default function RootLayout({

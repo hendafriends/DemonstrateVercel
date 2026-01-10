@@ -28,31 +28,49 @@
   --color-zumthor: #edf5ff;
   --color-socialicon: #d1d8e0;
 
-  --text-metatitle: 12px / 20px;
-  --text-sectiontitle: 14px / 22px;
-  --text-regular: 16px / 26px;
-  --text-metatitle3: 18px / 26px;
-  --text-metatitle2: 20px / 32px;
-  --text-para2: 22px / 35px;
-  --text-itemtitle: 26px / 32px;
-  --text-itemtitle2: 24px / 32px;
-  --text-hero: 44px / 58px;
-  --text-sectiontitle3: 44px / 55px;
-  --text-sectiontitle2: 40px / 52px;
-  --text-sectiontitle4: 34px / 48px;
+  /* Font Sizes & Line Heights */
+  --fontSize-metatitle: 12px;
+  --lineHeight-metatitle: 20px;
+  --fontSize-sectiontitle: 14px;
+  --lineHeight-sectiontitle: 22px;
+  --fontSize-regular: 16px;
+  --lineHeight-regular: 26px;
+  --fontSize-metatitle3: 18px;
+  --lineHeight-metatitle3: 26px;
+  --fontSize-metatitle2: 20px;
+  --lineHeight-metatitle2: 32px;
+  --fontSize-para2: 22px;
+  --lineHeight-para2: 35px;
+  --fontSize-itemtitle: 26px;
+  --lineHeight-itemtitle: 32px;
+  --fontSize-itemtitle2: 24px;
+  --lineHeight-itemtitle2: 32px;
+  --fontSize-hero: 44px;
+  --lineHeight-hero: 58px;
+  --fontSize-sectiontitle3: 44px;
+  --lineHeight-sectiontitle3: 55px;
+  --fontSize-sectiontitle2: 40px;
+  --lineHeight-sectiontitle2: 52px;
+  --fontSize-sectiontitle4: 34px;
+  --lineHeight-sectiontitle4: 48px;
 
-  --container-c-1390: 86.875rem;
-  --container-c-1315: 82.188rem;
-  --container-c-1280: 80rem;
-  --container-c-1235: 77.188rem;
-  --container-c-1154: 72.125rem;
-  --container-c-1016: 63.5rem;
+  /* Max Widths */
+  --maxWidth-c-1390: 86.875rem;
+  --maxWidth-c-1315: 82.188rem;
+  --maxWidth-c-1280: 80rem;
+  --maxWidth-c-1235: 77.188rem;
+  --maxWidth-c-1154: 72.125rem;
+  --maxWidth-c-1016: 63.5rem;
 
-  --z-index-1: 1;
-  --z-index-999: 999;
-  --z-index-99999: 99999;
+  /* Z-Index */
+  --zIndex-1: 1;
+  --zIndex-999: 999;
+  --zIndex-99999: 99999;
 
-  --transition-property-width: width;
+  /* Transition Properties */
+  --transitionProperty-width: width;
+
+  /* Box Shadows */
 
   --shadow-solid-l: 0px 10px 120px 0px rgba(45, 74, 170, 0.1);
   --shadow-solid-2: 0px 2px 10px rgba(122, 135, 167, 0.05);
@@ -68,9 +86,10 @@
   --shadow-solid-12: 0px 2px 10px rgba(0, 0, 0, 0.05);
   --shadow-solid-13: 0px 2px 19px rgba(0, 0, 0, 0.05);
 
-  --animate-line1: line 3s linear infinite;
-  --animate-line2: line 6s linear infinite;
-  --animate-line3: line 9s linear infinite;
+  /* Animations */
+  --animation-line1: line 3s linear infinite;
+  --animation-line2: line 6s linear infinite;
+  --animation-line3: line 9s linear infinite;
 
   @keyframes line {
     0%,
@@ -123,6 +142,46 @@
 }
 
 @layer utilities {
+  /* Custom font size utilities */
+  .text-metatitle { font-size: var(--fontSize-metatitle); line-height: var(--lineHeight-metatitle); }
+  .text-sectiontitle { font-size: var(--fontSize-sectiontitle); line-height: var(--lineHeight-sectiontitle); }
+  .text-regular { font-size: var(--fontSize-regular); line-height: var(--lineHeight-regular); }
+  .text-metatitle3 { font-size: var(--fontSize-metatitle3); line-height: var(--lineHeight-metatitle3); }
+  .text-metatitle2 { font-size: var(--fontSize-metatitle2); line-height: var(--lineHeight-metatitle2); }
+  .text-para2 { font-size: var(--fontSize-para2); line-height: var(--lineHeight-para2); }
+  .text-itemtitle { font-size: var(--fontSize-itemtitle); line-height: var(--lineHeight-itemtitle); }
+  .text-itemtitle2 { font-size: var(--fontSize-itemtitle2); line-height: var(--lineHeight-itemtitle2); }
+  .text-hero { font-size: var(--fontSize-hero); line-height: var(--lineHeight-hero); }
+  .text-sectiontitle3 { font-size: var(--fontSize-sectiontitle3); line-height: var(--lineHeight-sectiontitle3); }
+  .text-sectiontitle2 { font-size: var(--fontSize-sectiontitle2); line-height: var(--lineHeight-sectiontitle2); }
+  .text-sectiontitle4 { font-size: var(--fontSize-sectiontitle4); line-height: var(--lineHeight-sectiontitle4); }
+
+  /* Custom z-index utilities */
+  .z-1 { z-index: var(--zIndex-1); }
+  .-z-1 { z-index: calc(var(--zIndex-1) * -1); }
+  .z-999 { z-index: var(--zIndex-999); }
+  .z-99999 { z-index: var(--zIndex-99999); }
+
+  /* Custom shadow utilities */
+  .shadow-solid-l { box-shadow: var(--shadow-solid-l); }
+  .shadow-solid-2 { box-shadow: var(--shadow-solid-2); }
+  .shadow-solid-3 { box-shadow: var(--shadow-solid-3); }
+  .shadow-solid-4 { box-shadow: var(--shadow-solid-4); }
+  .shadow-solid-5 { box-shadow: var(--shadow-solid-5); }
+  .shadow-solid-6 { box-shadow: var(--shadow-solid-6); }
+  .shadow-solid-7 { box-shadow: var(--shadow-solid-7); }
+  .shadow-solid-8 { box-shadow: var(--shadow-solid-8); }
+  .shadow-solid-9 { box-shadow: var(--shadow-solid-9); }
+  .shadow-solid-10 { box-shadow: var(--shadow-solid-10); }
+  .shadow-solid-11 { box-shadow: var(--shadow-solid-11); }
+  .shadow-solid-12 { box-shadow: var(--shadow-solid-12); }
+  .shadow-solid-13 { box-shadow: var(--shadow-solid-13); }
+
+  /* Custom animation utilities */
+  .animate-line1 { animation: var(--animation-line1); }
+  .animate-line2 { animation: var(--animation-line2); }
+  .animate-line3 { animation: var(--animation-line3); }
+
   /* third-party libraries CSS */
 
   .testimonial-01 .swiper-pagination-bullet {
@@ -143,7 +202,10 @@
 
 @layer base {
   body {
-    @apply relative z-1 font-inter text-regular font-normal text-waterloo dark:text-manatee;
+    @apply relative font-inter font-normal text-waterloo dark:text-manatee;
+    z-index: var(--zIndex-1);
+    font-size: var(--fontSize-regular);
+    line-height: var(--lineHeight-regular);
   }
 }
 
